@@ -1,0 +1,22 @@
+*/__pycache__
+*/.pytest_cache
+*/.mypy_cache
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+.git
+
+# Node
+node_modules
+npm-debug.log
+
+# Logs
+docker-compose.override.yml
+dist
+build
+
+# Tests
+tests

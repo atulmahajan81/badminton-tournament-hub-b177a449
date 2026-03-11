@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  user-service:
+    volumes:
+      - ./backend:/app
+
+  tournament-service:
+    volumes:
+      - ./backend:/app
+
+  match-service:
+    volumes:
+      - ./backend:/app
+
+  score-service:
+    volumes:
+      - ./backend:/app
+
+  notification-service:
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    volumes:
+      - ./frontend:/app
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
